@@ -1,0 +1,30 @@
+/* Add these styles to your attendance.component.css file */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #077525;
+    font-weight: bold;
+  }
+  tbody{
+    background-color: #d3d9d0;
+  }
+  tr:hover {
+    background-color: hsl(200, 6%, 80%);
+  }
+  
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+  
+  
+  

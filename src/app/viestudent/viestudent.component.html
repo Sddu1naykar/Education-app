@@ -1,0 +1,34 @@
+<div class="large-container">
+<div class="container">
+
+    <table class="student-table">
+        <div class="photo-container">
+            <!-- Your photo content here -->
+          </div>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Grade</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ student?.id }}</td>
+          <td>{{ student?.name }}</td>
+          <td>{{ student?.age }}</td>
+          <td>{{ student?.grade }}</td>
+          <td>{{ student?.address }}</td>
+          <td>{{ student?.city }}</td>
+          <td>{{ student?.country }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="send">Send</button>
+    <button class="download">Download</button>
+  </div>
+</div>

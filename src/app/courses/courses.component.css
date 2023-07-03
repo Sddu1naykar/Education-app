@@ -1,0 +1,77 @@
+.layout{
+ 
+    background-color: rgb(132, 155, 177);
+    margin-left: 190px;
+    height: 1000px;
+    margin-top: -1030px;
+    width: 860px;
+    animation: fadeIn 10s ease-in-out;
+    
+}
+h1 {
+    color: rgb(25, 35, 226);
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes marquee {
+    82% {
+      transform: translateX(80%);
+    }
+    820% {
+      transform: translateX(-100%);
+    }
+  }
+  
+.layout ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -950px;
+   
+  }
+  
+  .layout ul div {
+    display: inline-block;
+    margin: 10px;
+
+    margin-left: 200px;
+  }
+  
+  .layout ul div a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: black;
+   
+    text-decoration: none;
+    padding-top: 20px;
+ margin-left: -160px;
+    border-radius: 10px;
+
+  }
+  
+  .layout ul div a:hover {
+    background-color: rgb(28, 114, 117);
+  }
+  
+  .layout ul div a i {
+    margin-bottom: 10px;
+  }
+  .arts{
+    background-color: rgb(17, 149, 186);
+  }
+  .commerce{
+    background-color: rgb(24, 75, 172);
+  }
+  .engineering{
+    background-color: rgb(55, 14, 93);
+  }
+  .medical{
+    background-color: rgb(21, 88, 21);
+  }
+  .science{
+    background-color: rgb(114, 114, 11);
+  }

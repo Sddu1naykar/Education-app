@@ -1,0 +1,25 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students" (click)="navigateToAnotherPage(student)">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.grade }}</td>
+        <td>{{ student.address }}</td>
+        <td>{{ student.city }}</td>
+        <td>{{ student.country }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

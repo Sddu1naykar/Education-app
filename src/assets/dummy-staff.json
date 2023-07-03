@@ -1,0 +1,133 @@
+{
+    "staff": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "role": "Teacher",
+            "img": "assets/one.jpg",
+            "degree": "M.Ed",
+            "subject": "Mathematics"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "role": "Teacher",
+            "degree": "B.Sc",
+            "subject": "Science"
+        },
+        {
+            "id": 3,
+            "name": "Michael Johnson",
+            "role": "Clerk"
+        },
+        {
+            "id": 4,
+            "name": "Emily Davis",
+            "role": "Teacher",
+            "degree": "M.A",
+            "subject": "English"
+        },
+        {
+            "id": 5,
+            "name": "Robert Brown",
+            "role": "Teacher",
+            "degree": "B.Ed",
+            "subject": "History"
+        },
+        {
+            "id": 6,
+            "name": "Sarah Thompson",
+            "role": "Clerk"
+        },
+        {
+            "id": 7,
+            "name": "David Wilson",
+            "role": "Teacher",
+            "degree": "Ph.D",
+            "subject": "Physics"
+        },
+        {
+            "id": 8,
+            "name": "Jennifer Martinez",
+            "role": "Teacher",
+            "degree": "B.A",
+            "subject": "Art"
+        },
+        {
+            "id": 9,
+            "name": "Christopher Taylor",
+            "role": "Clerk"
+        },
+        {
+            "id": 10,
+            "name": "Amy Anderson",
+            "role": "Teacher",
+            "degree": "M.Sc",
+            "subject": "Chemistry"
+        },
+        {
+            "id": 11,
+            "name": "Richard Thomas",
+            "role": "Teacher",
+            "degree": "B.Ed",
+            "subject": "Geography"
+        },
+        {
+            "id": 12,
+            "name": "Jessica Hernandez",
+            "role": "Clerk"
+        },
+        {
+            "id": 13,
+            "name": "Daniel Moore",
+            "role": "Teacher",
+            "degree": "M.A",
+            "subject": "English"
+        },
+        {
+            "id": 14,
+            "name": "Lisa Clark",
+            "role": "Teacher",
+            "degree": "B.Ed",
+            "subject": "Mathematics"
+        },
+        {
+            "id": 15,
+            "name": "Anthony Lewis",
+            "role": "Clerk"
+        },
+        {
+            "id": 16,
+            "name": "Michelle Lee",
+            "role": "Teacher",
+            "degree": "M.Sc",
+            "subject": "Biology"
+        },
+        {
+            "id": 17,
+            "name": "William Walker",
+            "role": "Teacher",
+            "degree": "B.Ed",
+            "subject": "Social Studies"
+        },
+        {
+            "id": 18,
+            "name": "Amanda White",
+            "role": "Clerk"
+        },
+        {
+            "id": 19,
+            "name": "Matthew Thompson",
+            "role": "Teacher",
+            "degree": "M.Ed",
+            "subject": "Physical Education"
+        },
+        {
+            "id": 20,
+            "name": "Elizabeth Green",
+            "role": "Principal",
+            "degree": "M.Ed",
+            "subject": "Physical Education"
+        }
+    ]
+}

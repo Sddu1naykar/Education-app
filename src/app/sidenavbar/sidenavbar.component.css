@@ -1,0 +1,32 @@
+.sidebar {
+    width: 200px;
+    background-color: #1b1a37;
+    margin-top: -16px;
+    margin-left: -10px;
+    height: 1000px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: hsl(0, 5%, 93%);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  
+  .sidebar ul li a:hover {
+    color: hsl(0, 0%, 0%);
+    background-color: #ededed;
+    border-radius:  5px;
+
+  }
+  

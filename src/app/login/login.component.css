@@ -1,0 +1,54 @@
+form {
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  width: 200px;
+  height: 250px;
+  margin-top: 60px;
+  margin-left: 400px;
+
+}
+
+.container {
+  background-color: rgb(30, 99, 149);
+  width: 100%;
+  padding-top: 50px;
+  height: 430px;
+}
+
+
+button {
+
+  color: hsl(233, 82%, 27%);
+  border-radius: 10px;
+  background-color: rgb(45, 131, 45);
+  width: 60px;
+  margin-top: -10px;
+
+  &:hover {
+    background-color: rgb(4, 195, 4);
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+}
+
+.user-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 63px;
+  padding: 10px;
+
+}
+
+.user-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-items: center;
+}
