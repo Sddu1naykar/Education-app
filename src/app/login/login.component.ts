@@ -1,43 +1,28 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserDataService } from '../user-data.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private router: Router,private userDataService: UserDataService) {
+  constructor(private router: Router) {
+    this.registrationForm = new FormGroup({
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', [Validators.required, Validators.minLength(6)])
+    });
+  }
 
-      this.registrationForm = new FormGroup({
-        // Your form controls here
-      
-
-      });
-
-   }
- 
-   title = 'LOGIN-FORM APPLICATION';
-   registrationForm: FormGroup;
-   loggedIn = false;
+  registrationForm: FormGroup;
 
   submitForm() {
     if (this.registrationForm.valid) {
       // Perform actions with the form data
       alert("Login successful...");
-      this.registrationForm.reset(); // Reset the form fields
-      this.loggedIn = true; // Set the loggedIn flag to true
-
-    // Retrieve user data from the service
-    const userData = this.userDataService.getUserData();
-    // localStorage.clear();
-    console.log('User Data:', userData);
-    
-    this.router.navigate(['/dashbord',userData])
-
+      this.registrationForm.reset();
+      this.router.navigateByUrl('/dashbord');
     }
   }
-
-
 }

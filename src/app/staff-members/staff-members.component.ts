@@ -1,24 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-staff-members',
   templateUrl: './staff-members.component.html',
   styleUrls: ['./staff-members.component.css']
 })
-export class StaffMembersComponent implements OnInit {
- product :any
-  constructor(private http: HttpClient) { }
+export class StaffMembersComponent  {
+  staff: any[] = [];
 
-  ngOnInit() {
-    this.getProducts();
+  constructor(private http: HttpClient, private router: Router) {
+    this.fetchStudents();
   }
-  // https://dummyjson.com/products
- 
-  getProducts() {
-    this.http.get('https://www.googleapis.com/books/v1/volumes?q=isbn:0716604892').subscribe((data: any) => {
-      console.log(data);
-      this.product = data
-    });
+
+  fetchStudents() {
+    this.http.get<any>('/assets/dummy-staff.json').subscribe(
+      (data: any) => {
+        this.staff = data.users;
+        console.log(this.staff);
+      },
+      (error) => {
+        console.error('Error fetching students:', error);
+      }
+    );
   }
+
 }

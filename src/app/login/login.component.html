@@ -1,36 +1,30 @@
-
-
 <div class="container">
-    
-    <form class="form-login" [formGroup]="registrationForm" (ngSubmit)="submitForm()">
-      <h1>   
-        <div class="user-icon">
-          <img src="assets/icon.png" alt="user-icon">
-        </div>
-        
-      </h1>
-      <div>
-    
-        <input type="text" id="name" placeholder="Enter Name" formControlName="name">
-        <div *ngIf="registrationForm.get('name')?.invalid && registrationForm.get('name')?.touched" class="error-message">
-          Name is required.
-        </div>
-      </div><br>
-      <div>
-        <input type="email" id="email" placeholder="Enter Email" formControlName="email">
-        <div *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched" class="error-message">
-          Please enter a valid email address.
-        </div>
-      </div><br>
-      <div>
-    
-        <input type="password" id="password" placeholder="Enter Password" formControlName="password">
-        <div *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched" class="error-message">
-        Password at least 6 characters long.
-        </div>
-      </div><br>
-      <!-- <button type="submit" [disabled]="registrationForm.invalid">Submit</button> -->
-      <button type="submit" >Login</button>
-    </form>
-    </div>
-    
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-toolbar color="primary" class="login-toolbar" fxFlexFill>Login</mat-toolbar>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="registrationForm" (ngSubmit)="submitForm()">
+        <mat-form-field class="input-field">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email" class="text-input">
+          <mat-error class="error" *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched">
+            Please enter a valid email address.
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="input-field">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" class="text-input">
+          <mat-error class="error" *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched">
+            Password must be at least 6 characters long.
+          </mat-error>
+        </mat-form-field>
+
+        <button class="login" mat-raised-button color="primary" type="submit" [disabled]="registrationForm.invalid">
+          Login
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

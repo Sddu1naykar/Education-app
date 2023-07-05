@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AttendanceComponent } from './attendance/attendance.component';
@@ -16,7 +15,6 @@ import { ViestudentComponent } from './viestudent/viestudent.component';
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   {path:'login', component:LoginComponent },
-  {path:'signup', component:SignupComponent},
   {path:'dashbord', component:DashbordComponent},
   { path: 'profile', component:ProfileComponent  },
   { path: 'attendance', component:  AttendanceComponent},

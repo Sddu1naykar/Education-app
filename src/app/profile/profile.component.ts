@@ -6,19 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-  public student = {
-    firstName: 'John',
-    lastName: 'Doe',
-    email: 'john.doe@example.com',
-    age: 20,
-    fatherName: '',
-    address: '',
-    mobileNumber: '',
-    panCard: ''
+  languages: string[] = ['Kannda', 'English', 'Hindi'];
+  selectedLanguages: string[] = [];
+  cities: string[] = ['City 1', 'City 2', 'City 3', 'City 4'];
   };
 
-  public fatherName: string="";
-  public address: string="";
-  public mobileNumber: string="";
-  public panCard: string="";
-}
+

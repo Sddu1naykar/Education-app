@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
+
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { TopnavbarComponent } from './topnavbar/topnavbar.component';
 import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
@@ -21,11 +21,22 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ViestudentComponent } from './viestudent/viestudent.component';
 import { CoursesComponent } from './courses/courses.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent,
     DashbordComponent,
     TopnavbarComponent,
     SidenavbarComponent,
@@ -39,14 +50,26 @@ import { CoursesComponent } from './courses/courses.component';
     NotificationsComponent,
     ViestudentComponent,
     CoursesComponent
-  
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatIconModule,
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatInputModule,BrowserAnimationsModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    FlexLayoutModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,65 @@
-<!-- <div class="profile-container">
-    <h2>Student Profile</h2>
-    <div >
-        <p><strong>Father's Name:</strong> <input type="text" [(ngModel)]="fatherName"></p>
-        <p><strong>Address:</strong> <input type="text" [(ngModel)]="address"></p>
-        <p><strong>Mobile Number:</strong> <input type="tel" [(ngModel)]="mobileNumber"></p>
-        <p><strong>PAN Card:</strong> <input type="text" [(ngModel)]="panCard"></p>
-        <!-- Add more input fields as needed -->
-      <!-- </div>
-  <button type="submit">Submit</button>
-  </div>
-   --> -->
+<form class="custom-form">
+    <h1>STUDENT BASIC</h1>
+    <div class="form-row">
+      <mat-form-field>
+        <mat-label>Student Name</mat-label>
+        <input matInput placeholder="Enter student name">
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Father's Name</mat-label>
+        <input matInput placeholder="Enter father's name">
+      </mat-form-field>
+    </div>
+  
+    <div class="form-row">
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput placeholder="Enter address">
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Pincode</mat-label>
+        <input matInput type="number" placeholder="Enter pincode">
+      </mat-form-field>
+    </div>
+  
+    <div class="form-row">
+      <mat-form-field>
+        <mat-label>Languages</mat-label>
+        <input matInput placeholder="Enter languages">
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Gender</mat-label>
+        <mat-select>
+          <mat-option value="male">Male</mat-option>
+          <mat-option value="female">Female</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  
+    <div class="form-row">
+      <mat-form-field>
+        <mat-label>City</mat-label>
+        <input matInput placeholder="Enter city">
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Aadhaar Upload</mat-label>
+        <input type="file">
+      </mat-form-field>
+    </div>
+  
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Profile Photo Upload</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <input type="file">
+      </mat-card-content>
+    </mat-card>
+  
+    <button mat-raised-button color="primary">Submit</button>
+  </form>
+
